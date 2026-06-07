@@ -1,0 +1,18 @@
+# OS / system files
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*~
+
+# Logs / temp
+*.log
+*.tmp
+
+# Dependency dirs (none currently — site is dependency-free)
+node_modules/

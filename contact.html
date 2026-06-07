@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact — Aesh Solutions | SAP AI Consulting</title>
+<meta name="description" content="Book a consultation with Aesh Solutions. SAP AI consulting in New Jersey. Send us a message and we'll reply within one business day." />
+<link rel="icon" href="favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="apple-touch-icon.svg" />
+<meta name="theme-color" content="#070d18" />
+<link rel="stylesheet" href="fonts/fonts.css" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="nav solid" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand"><span class="mark"></span> Aesh Solutions</a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="work.html">Case Studies</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+    <a href="contact.html" class="nav-cta">Book a consultation</a>
+    <button class="nav-toggle" aria-label="Open menu"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+  </div>
+</header>
+
+<section class="light" style="padding:170px 0 120px" id="top">
+  <div class="wrap">
+    <div class="contact-grid">
+      <!-- INFO -->
+      <div class="contact-info reveal">
+        <p class="eyebrow">Contact us</p>
+        <h2 class="h-display">Let's turn your SAP data into intelligence</h2>
+        <p>Tell us a little about your SAP landscape and what you're trying to achieve. We'll get back to you within one business day.</p>
+
+        <div class="info-row">
+          <span class="ico"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="14" height="10" rx="2"/><path d="M2 5l7 5 7-5"/></svg></span>
+          <div><div class="lab">Email</div><span>Use the form — we'll reply by email</span></div>
+        </div>
+        <div class="info-row">
+          <span class="ico"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 1c3 0 6 2.4 6 6 0 4-6 10-6 10S3 11 3 7c0-3.6 3-6 6-6z"/><circle cx="9" cy="7" r="2"/></svg></span>
+          <div><div class="lab">Location</div><span>New Jersey, USA · serving clients globally</span></div>
+        </div>
+        <div class="info-row">
+          <span class="ico"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="9" cy="9" r="7"/><path d="M9 5v4l3 2"/></svg></span>
+          <div><div class="lab">Response time</div><span>Within one business day</span></div>
+        </div>
+      </div>
+
+      <!-- FORM -->
+      <div class="form-card reveal d1">
+        <!-- Replace FORM_ID below with your Formspree form ID (formspree.io) -->
+        <form id="contactForm" action="https://formspree.io/f/mojzjvqz" method="POST" novalidate>
+          <div class="field two">
+            <div class="field">
+              <label for="name">Full name *</label>
+              <input id="name" name="name" type="text" required placeholder="Jane Doe" />
+              <div class="err">Please enter your name.</div>
+            </div>
+            <div class="field">
+              <label for="company">Company</label>
+              <input id="company" name="company" type="text" placeholder="Acme Corp" />
+            </div>
+          </div>
+          <div class="field two">
+            <div class="field">
+              <label for="email">Work email *</label>
+              <input id="email" name="email" type="email" required placeholder="jane@company.com" />
+              <div class="err">Please enter a valid email.</div>
+            </div>
+            <div class="field">
+              <label for="phone">Phone</label>
+              <input id="phone" name="phone" type="tel" placeholder="(201) 555-0100" />
+            </div>
+          </div>
+          <div class="field">
+            <label for="interest">What can we help with?</label>
+            <select id="interest" name="interest">
+              <option>SAP S/4HANA &amp; Joule AI</option>
+              <option>SAP BTP &amp; AI Core</option>
+              <option>Predictive Analytics</option>
+              <option>Intelligent Automation</option>
+              <option>Data Engineering &amp; Migration</option>
+              <option>Not sure yet — let's talk</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" required placeholder="Tell us about your SAP environment and goals…"></textarea>
+            <div class="err">Please add a short message.</div>
+          </div>
+          <div class="form-foot">
+            <button type="submit" class="btn-primary btn-dark">Send message <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 8h10M9 4l4 4-4 4"/></svg></button>
+            <span class="form-note">We'll never share your details.</span>
+          </div>
+        </form>
+        <!-- Success state -->
+        <div class="form-success" id="formSuccess">
+          <div class="check"><svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 14l5 5 12-13"/></svg></div>
+          <h3>Thank you — message sent</h3>
+          <p>We've received your message and will reply within one business day.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="index.html" class="brand"><span class="mark"></span> Aesh Solutions</a>
+        <p>SAP AI consulting based in New Jersey. We help enterprises embed trustworthy AI across S/4HANA, Joule, and BTP.</p>
+      </div>
+      <div class="foot-col"><h4>Company</h4><a href="about.html">About</a><a href="services.html">Services</a><a href="work.html">Case Studies</a><a href="contact.html">Contact</a></div>
+      <div class="foot-col"><h4>Legal</h4><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Use</a><a href="#" data-cookie-settings>Cookie settings</a></div>
+      <div class="foot-col"><h4>Contact</h4><a href="contact.html">Get in touch</a><a href="https://www.linkedin.com/company/aesh-solutions" target="_blank" rel="noopener">LinkedIn</a><span>New Jersey, USA</span></div>
+    </div>
+    <div class="foot-bot">
+      <p>© <span data-year>2026</span> Aesh Solutions. All rights reserved.</p>
+      <a href="#top" class="back-top">Back to top <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 12V2M3 6l4-4 4 4"/></svg></a>
+    </div>
+  </div>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>
