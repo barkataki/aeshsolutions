@@ -23,7 +23,6 @@ setTimeout(()=>document.querySelectorAll('.reveal:not(.in)').forEach(el=>{
 // ===== Services interactive list =====
 const svcData=[
  {img:'images/ai-neural.jpg',c:'<strong>Embed AI directly inside your core ERP.</strong> We deploy SAP Joule, configure S/4HANA copilots, and build use-case-driven AI that surfaces inside the workflows your teams already use — accurate, governed, and audit-ready.'},
- {img:'images/data-center.jpg',c:'<strong>Extend SAP with a modern AI platform.</strong> We build on SAP Business Technology Platform and AI Core to host models, orchestrate data, and integrate generative AI securely within your enterprise perimeter.'},
  {img:'images/svc-btp.jpg',c:'<strong>See what happens next.</strong> Forecasting, demand planning, and predictive maintenance powered by your SAP data and SAP Analytics Cloud — accurate, transparent, and operationally useful.'},
  {img:'images/svc-automation.jpg',c:'<strong>Remove the manual bottlenecks.</strong> Document AI, intelligent RPA, and workflow automation that cut cycle time and error rates across finance, supply chain, and operations.'},
  {img:'images/svc-data.jpg',c:'<strong>Trustworthy AI starts with clean data.</strong> We unify, model, and migrate your SAP data — Datasphere, pipelines, and governance — so every model is built on a reliable foundation.'}
