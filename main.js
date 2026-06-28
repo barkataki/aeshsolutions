@@ -24,17 +24,22 @@ setTimeout(()=>document.querySelectorAll('.reveal:not(.in)').forEach(el=>{
 const svcData=[
  {c:'<strong>Embed AI directly inside your core ERP.</strong> We deploy SAP Joule, configure S/4HANA copilots, and build use-case-driven AI that surfaces inside the workflows your teams already use — accurate, governed, and audit-ready.'},
  {c:'<strong>See what happens next.</strong> Forecasting, demand planning, and predictive maintenance powered by your SAP data and SAP Analytics Cloud — accurate, transparent, and operationally useful.'},
- {c:'<strong>Remove the manual bottlenecks.</strong> Document AI, intelligent RPA, and workflow automation that cut cycle time and error rates across finance, supply chain, and operations.'},
+ {c:'<strong>Remove the manual bottlenecks.</strong> Document AI, intelligent RPA, and workflow automation that cut cycle time and error rates across finance, supply chain, and operations.',link:{href:'case-automated-decision-systems.html',label:'Read use case'}},
  {c:'<strong>Trustworthy AI starts with clean data.</strong> We unify, model, and migrate your SAP data — Datasphere, pipelines, and governance — so every model is built on a reliable foundation.'}
 ];
 const items=[...document.querySelectorAll('.svc-item')];
 const copy=document.getElementById('svcCopy');
+const svcFoot=document.getElementById('svcFoot');
+const svcFootLabel=document.getElementById('svcFootLabel');
 function select(it){
   items.forEach(i=>i.classList.remove('active'));it.classList.add('active');
   const i=+it.dataset.svc;
   if(copy)copy.style.opacity=0;
   setTimeout(()=>{
     if(copy){copy.innerHTML=svcData[i].c;copy.style.opacity=1;}
+    const L=svcData[i].link||{href:'contact.html',label:'Discuss your use case'};
+    if(svcFoot)svcFoot.setAttribute('href',L.href);
+    if(svcFootLabel)svcFootLabel.textContent=L.label;
   },160);
 }
 items.forEach(it=>{it.addEventListener('mouseenter',()=>select(it));it.addEventListener('click',()=>select(it));});
