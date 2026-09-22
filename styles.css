@@ -79,6 +79,7 @@ section{position:relative}
 .hero h1{color:var(--white);font-family:var(--display);font-weight:700;letter-spacing:-.046em;font-size:clamp(2.7rem,6.6vw,5.4rem);line-height:1}
 .hero h1 em{font-family:var(--serif);font-style:italic;font-weight:400;letter-spacing:-.01em;color:var(--blue-bright)}
 .hero p.sub{color:rgba(247,248,250,.66);font-size:clamp(1rem,1.4vw,1.18rem);max-width:560px;margin:1.8rem auto 0;line-height:1.6}
+.hero p.sub.fine{color:rgba(247,248,250,.48);font-size:clamp(.86rem,1.05vw,.95rem);max-width:540px;margin-top:.9rem;line-height:1.55}
 .badge{display:inline-flex;align-items:center;gap:9px;border:1px solid rgba(255,255,255,.14);border-radius:100px;padding:7px 16px;color:rgba(247,248,250,.8);font-size:.8rem;font-family:var(--display);letter-spacing:.02em;margin-bottom:2.2rem;background:rgba(255,255,255,.03)}
 .badge .dot{width:7px;height:7px;border-radius:50%;background:#52d39a;box-shadow:0 0 10px #52d39a}
 .hero-actions{display:flex;gap:16px;justify-content:center;margin-top:2.6rem;flex-wrap:wrap}
@@ -130,17 +131,12 @@ section{position:relative}
 .stat .n{font-family:var(--mono);font-size:2rem;font-weight:600;letter-spacing:-.04em}
 .stat .l{color:var(--mute-dark);font-size:.85rem}
 .dark .stat .l{color:var(--mute)}
-.logos{border-top:1px solid var(--line-light);margin-top:90px;padding-top:42px;overflow:hidden;position:relative;
-  -webkit-mask:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent);mask:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent)}
-.logos-track{display:flex;align-items:center;gap:64px;width:max-content;animation:logosScroll 36s linear infinite}
-.logos:hover .logos-track{animation-play-state:paused}
-.logos span{font-family:var(--display);font-weight:600;color:#b9b6ad;font-size:1.05rem;letter-spacing:.02em;white-space:nowrap;flex:0 0 auto;opacity:.85;transition:opacity .3s,color .3s}
-.logos span:hover{opacity:1;color:var(--mute-dark)}
-@keyframes logosScroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-/* Second carousel (industries): pairs below, scrolls the opposite way, quieter */
-.logos.alt{padding-top:42px}
-.logos.alt .logos-track{animation-duration:44s;animation-direction:reverse}
-.logos.alt span{font-weight:500;font-size:.92rem;color:var(--mute);text-transform:uppercase;letter-spacing:.1em}
+/* Sectors served — steady, wrapping list */
+.sectors{border-top:1px solid var(--line-light);margin-top:90px;padding-top:42px}
+.sectors .eyebrow{margin-bottom:26px}
+.sectors-list{list-style:none;display:flex;flex-wrap:wrap;justify-content:center;gap:16px 30px;max-width:920px;margin:0 auto}
+.sectors-list li{font-family:var(--display);font-weight:500;font-size:.92rem;color:var(--mute);text-transform:uppercase;letter-spacing:.1em;transition:color .3s}
+.sectors-list li:hover{color:var(--mute-dark)}
 
 /* OVERSIZED EDITORIAL STATEMENT — deliberate scale crescendo */
 .statement-sec{padding:150px 0;background:var(--navy-deep);overflow:hidden}
@@ -449,10 +445,10 @@ footer{background:var(--navy-deep);color:var(--white);padding:80px 0 38px}
   /* Stats become a tidy 2-up grid instead of a cramped wrapping row */
   .stats{display:grid;grid-template-columns:1fr 1fr;gap:26px 20px}
 
-  /* Logos: keep the running carousel on mobile, slightly tighter */
-  .logos{margin-top:64px;padding-top:32px}
-  .logos-track{gap:44px;animation-duration:26s}
-  .logos span{font-size:.95rem}
+  /* Sectors: tighter on mobile */
+  .sectors{margin-top:64px;padding-top:32px}
+  .sectors-list{gap:12px 20px}
+  .sectors-list li{font-size:.82rem;letter-spacing:.08em}
 
   /* Case studies: horizontal swipe carousel with snap — the real mobile pattern,
      echoing the reference's scroller rather than a tall stack */
