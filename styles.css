@@ -131,14 +131,14 @@ section{position:relative}
 .stat .l{color:var(--mute-dark);font-size:.85rem}
 .dark .stat .l{color:var(--mute)}
 /* Sectors served — steady, wrapping list */
-.sectors{border-top:1px solid var(--line-light);margin-top:90px;padding-top:42px}
+.sectors{border-top:1px solid var(--line-light);margin-top:48px;padding-top:40px}
 .sectors .eyebrow{margin-bottom:26px}
-.sectors-list{list-style:none;display:flex;flex-wrap:wrap;justify-content:center;gap:16px 30px;max-width:920px;margin:0 auto}
-.sectors-list li{font-family:var(--display);font-weight:500;font-size:.92rem;color:var(--mute);text-transform:uppercase;letter-spacing:.1em;transition:color .3s}
-.sectors-list li:hover{color:var(--mute-dark)}
+.sectors-list{list-style:none;display:flex;flex-wrap:wrap;justify-content:center;gap:12px;max-width:860px;margin:0 auto}
+.sectors-list li{font-family:var(--display);font-weight:500;font-size:.85rem;color:var(--mute-dark);letter-spacing:.01em;padding:9px 18px;border:1px solid var(--line-light);border-radius:100px;background:#fff;transition:color .3s,border-color .3s,background .3s,transform .3s}
+.sectors-list li:hover{color:var(--ink);border-color:var(--blue);transform:translateY(-2px)}
 
 /* OVERSIZED EDITORIAL STATEMENT — deliberate scale crescendo */
-.statement-sec{padding:150px 0;background:var(--navy-deep);overflow:hidden}
+.statement-sec{padding:60px 0;background:var(--navy-deep);overflow:hidden}
 .statement-sec .eyebrow{color:var(--blue)}
 .statement{font-family:var(--display);font-weight:600;letter-spacing:-.045em;line-height:1.02;
   font-size:clamp(2.4rem,5.6vw,4.4rem);max-width:20ch;color:#33425c}
@@ -155,7 +155,7 @@ section{position:relative}
 .statement-sec.on-light .statement .lift{color:#cfcdc6}
 .statement-sec.on-light .statement.in .lift{color:var(--ink)}
 .statement-sec.on-light .statement-foot{color:var(--mute-dark)}
-@media(max-width:560px){.statement-sec{padding:96px 0}.statement{font-size:clamp(2.4rem,11vw,3.4rem)}}
+@media(max-width:560px){.statement-sec{padding:44px 0}.statement{font-size:clamp(2.4rem,11vw,3.4rem)}}
 
 /* QUOTE */
 .quote-sec{background:radial-gradient(120% 120% at 70% 10%,#16263f,#0a131f 60%,#070d18);text-align:center}
@@ -449,9 +449,9 @@ footer{background:var(--navy-deep);color:var(--white);padding:80px 0 38px}
   .stats{display:grid;grid-template-columns:1fr 1fr;gap:26px 20px}
 
   /* Sectors: tighter on mobile */
-  .sectors{margin-top:64px;padding-top:32px}
-  .sectors-list{gap:12px 20px}
-  .sectors-list li{font-size:.82rem;letter-spacing:.08em}
+  .sectors{margin-top:40px;padding-top:30px}
+  .sectors-list{gap:9px}
+  .sectors-list li{font-size:.78rem;padding:8px 15px}
 
   /* Case studies: horizontal swipe carousel with snap — the real mobile pattern,
      echoing the reference's scroller rather than a tall stack */
