@@ -217,7 +217,7 @@ section{position:relative}
 .gm-val{display:flex;align-items:center;gap:12px;font-family:var(--display);font-weight:600;font-size:1.2rem;color:var(--ink)}
 .gm-val .from{color:var(--mute-dark);font-weight:500}
 .gm-val svg{color:var(--blue);flex:0 0 auto}
-.goal-list{list-style:none;display:flex;flex-direction:column;gap:16px}
+.goal-list{list-style:none;display:flex;flex-direction:column;gap:44px}
 .goal-list li{position:relative;padding-left:32px;color:var(--mute-dark);font-size:1rem;line-height:1.5}
 .goal-list li::before{content:"";position:absolute;left:0;top:1px;width:20px;height:20px;border-radius:50%;background:var(--blue) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 16 16' fill='none' stroke='%23fff' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 8.5l3.2 3.2L13 5'/%3E%3C/svg%3E") center/12px no-repeat}
 .cc-points{list-style:none;counter-reset:cc;display:grid;gap:24px;margin-top:40px;max-width:860px}
@@ -269,6 +269,7 @@ section{position:relative}
   .cstudy-meta{grid-template-columns:1fr 1fr;gap:24px 16px;margin-bottom:48px}
   .results{grid-template-columns:1fr}
   .cs-goals{grid-template-columns:1fr;gap:40px}
+  .goal-list{gap:18px}
 }
 .phase-card .icn{position:absolute;top:26px;right:26px;color:var(--blue-bright);opacity:.8;z-index:2}
 
