@@ -1,0 +1,34 @@
+# Aesh Solutions
+
+> Aesh Solutions is a boutique New Jersey-based SAP + AI consultancy. We help enterprises become AI-first by embedding agentic, production-grade AI across SAP S/4HANA, Joule, and SAP Business AI — from assessment to production, typically in 6-10 weeks.
+
+Contact: sanjeev@aeshsolutions.com
+
+## Pages
+
+- [Home](https://www.aeshsolutions.com/): Overview of Aesh Solutions, what we do, and why enterprises choose us.
+- [About](https://www.aeshsolutions.com/about.html): 25+ years of SAP expertise, our AI architecture approach, and our 3-phase delivery model.
+- [Services](https://www.aeshsolutions.com/services.html): SAP S/4HANA & SAP Business AI, Predictive Analytics, Intelligent Automation, and Data Engineering & Migration. Includes FAQs.
+- [Contact](https://www.aeshsolutions.com/contact.html): Book a consultation.
+
+## Case studies
+
+- [Autonomous decision systems for Accounts Payable](https://www.aeshsolutions.com/case-automated-decision-systems.html): How Aesh took a U.S. water utility's accounts payable to 85% touchless processing with AI-powered OpenText Vendor Invoice Management on SAP — halving invoice cycle time.
+
+## Capabilities
+
+- SAP S/4HANA copilots and SAP Joule / SAP Business AI configuration
+- Predictive analytics on ERP data
+- Intelligent automation (e.g. Vendor Invoice Management, 3-way match, exception handling)
+- Data engineering and migration
+- Governed, explainable, audit-ready AI
+
+## Legal
+
+- [Privacy Policy](https://www.aeshsolutions.com/privacy.html)
+- [Terms of Use](https://www.aeshsolutions.com/terms.html)
+
+## Usage
+
+- Search indexing: allowed
+- AI training: not allowed (see /robots.txt Content-Signal)

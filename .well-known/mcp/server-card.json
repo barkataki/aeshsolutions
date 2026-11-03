@@ -1,0 +1,32 @@
+{
+  "schemaVersion": "2025-06-18",
+  "name": "aesh-solutions",
+  "title": "Aesh Solutions",
+  "version": "1.0.0",
+  "description": "Informational MCP surface for Aesh Solutions, a boutique SAP + AI consultancy. Exposes read-only tools describing services and contact details. In-browser tools are also registered via WebMCP on page load.",
+  "vendor": {
+    "name": "Aesh Solutions",
+    "url": "https://www.aeshsolutions.com/"
+  },
+  "endpoint": "https://www.aeshsolutions.com/",
+  "transport": "webmcp",
+  "capabilities": {
+    "tools": [
+      {
+        "name": "get_aesh_contact",
+        "description": "Return Aesh Solutions contact details and the consultation booking link."
+      },
+      {
+        "name": "get_aesh_services",
+        "description": "Return the list of SAP + AI services Aesh Solutions offers."
+      }
+    ],
+    "resources": [
+      {
+        "name": "llms.txt",
+        "uri": "https://www.aeshsolutions.com/llms.txt",
+        "mimeType": "text/plain"
+      }
+    ]
+  }
+}

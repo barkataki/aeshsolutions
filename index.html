@@ -28,29 +28,60 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  "name": "Aesh Solutions",
-  "url": "https://www.aeshsolutions.com/",
-  "logo": "https://www.aeshsolutions.com/brand/aesh-logo-512.png",
-  "image": "https://www.aeshsolutions.com/images/og-image.jpg",
-  "description": "Aesh Solutions is a boutique SAP AI consultancy helping enterprises embed agentic, production-grade AI across S/4HANA, Joule, and SAP Business AI.",
-  "address": {
-    "@type": "PostalAddress",
-    "addressRegion": "NJ",
-    "addressCountry": "US"
-  },
-  "areaServed": "Worldwide",
-  "sameAs": [
-    "https://www.linkedin.com/company/aesh-solutions"
-  ],
-  "knowsAbout": [
-    "SAP S/4HANA",
-    "SAP Joule",
-    "SAP Business AI",
-    "Vendor Invoice Management",
-    "Predictive Analytics",
-    "Intelligent Automation",
-    "Data Engineering"
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.aeshsolutions.com/#organization",
+      "name": "Aesh Solutions",
+      "url": "https://www.aeshsolutions.com/",
+      "logo": "https://www.aeshsolutions.com/brand/aesh-logo-512.png",
+      "image": "https://www.aeshsolutions.com/images/og-image.jpg",
+      "description": "Aesh Solutions is a boutique SAP AI consultancy helping enterprises embed agentic, production-grade AI across S/4HANA, Joule, and SAP Business AI.",
+      "email": "sanjeev@aeshsolutions.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "NJ",
+        "addressCountry": "US"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/aesh-solutions"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "sales",
+        "email": "sanjeev@aeshsolutions.com",
+        "url": "https://www.aeshsolutions.com/contact.html",
+        "areaServed": "Worldwide",
+        "availableLanguage": "English"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.aeshsolutions.com/#website",
+      "url": "https://www.aeshsolutions.com/",
+      "name": "Aesh Solutions",
+      "inLanguage": "en",
+      "publisher": { "@id": "https://www.aeshsolutions.com/#organization" }
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://www.aeshsolutions.com/#service",
+      "name": "Aesh Solutions",
+      "url": "https://www.aeshsolutions.com/",
+      "image": "https://www.aeshsolutions.com/images/og-image.jpg",
+      "description": "Production-grade SAP AI consulting - Joule, S/4HANA copilots, predictive analytics, intelligent automation, and data engineering.",
+      "parentOrganization": { "@id": "https://www.aeshsolutions.com/#organization" },
+      "areaServed": "Worldwide",
+      "knowsAbout": [
+        "SAP S/4HANA",
+        "SAP Joule",
+        "SAP Business AI",
+        "Vendor Invoice Management",
+        "Predictive Analytics",
+        "Intelligent Automation",
+        "Data Engineering"
+      ]
+    }
   ]
 }
 </script>

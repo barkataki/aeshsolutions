@@ -172,3 +172,28 @@ document.querySelectorAll('[data-year]').forEach(el=>el.textContent=new Date().g
   if(c==='declined'){return;}
   showBanner();
 })();
+
+/* WebMCP: expose lightweight, read-only tools to in-browser agents.
+   Feature-detected — no-op in browsers without navigator.modelContext. */
+(function(){
+  try{
+    var mc=navigator.modelContext;
+    if(!mc||typeof mc.registerTool!=='function')return;
+    mc.registerTool({
+      name:'get_aesh_contact',
+      description:'Get Aesh Solutions contact details and the consultation booking link.',
+      inputSchema:{type:'object',properties:{},additionalProperties:false},
+      execute:function(){
+        return {content:[{type:'text',text:'Aesh Solutions — SAP + AI consulting, based in New Jersey, USA (serving globally). Email: sanjeev@aeshsolutions.com. Book a consultation: https://www.aeshsolutions.com/contact.html'}]};
+      }
+    });
+    mc.registerTool({
+      name:'get_aesh_services',
+      description:'List the SAP + AI services Aesh Solutions offers.',
+      inputSchema:{type:'object',properties:{},additionalProperties:false},
+      execute:function(){
+        return {content:[{type:'text',text:'Aesh Solutions services: 1) SAP S/4HANA & SAP Business AI (Joule, S/4HANA copilots); 2) Predictive Analytics; 3) Intelligent Automation (e.g. Vendor Invoice Management, 3-way match, exception handling); 4) Data Engineering & Migration. Details: https://www.aeshsolutions.com/services.html'}]};
+      }
+    });
+  }catch(e){}
+})();

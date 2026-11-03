@@ -1,0 +1,22 @@
+# --- Agent-readiness directives ---------------------------------------------
+# NOTE: If your Hostinger public_html already contains an .htaccess (e.g. for
+# HTTPS/www redirects), MERGE these blocks into it rather than overwriting.
+
+# Correct content types for agent-facing files
+AddType text/markdown .md
+AddType application/json .json
+
+# RFC 8288 Link header advertising the llms.txt and Markdown alternates (on HTML pages)
+<IfModule mod_headers.c>
+  <FilesMatch "\.html$">
+    Header set Link "</llms.txt>; rel=\"alternate\"; type=\"text/plain\"; title=\"llms.txt\", </index.md>; rel=\"alternate\"; type=\"text/markdown\""
+  </FilesMatch>
+</IfModule>
+
+# Serve the Markdown homepage when an agent requests text/markdown
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTP_ACCEPT} text/markdown [NC]
+  RewriteCond %{REQUEST_URI} ^/(index\.html)?$
+  RewriteRule ^ /index.md [L]
+</IfModule>
